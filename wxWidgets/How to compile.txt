@@ -1,0 +1,15 @@
+﻿wxWidgets 与其它跨平台的gui库相比有如下优点：
+1、是免费的，无论对于个人还是商业应用；
+2、支持的操作系统相当全面；
+3、大量使用宏，也就是说，编译出来的代码尽量使用目标操作系统的 native 的 gui 样式；
+4、支持的编译器各类多；
+5、应用广泛，目前有很多 gui 项目都是建立在 wxWidgets 之上的。
+
+ 到其官方网站下载最新版本的 wxWidgets，目前最新版本为2.8.0,解压到C:/wxWidgets 2.8.0目录下。打开命令行界面[开始｜运行，cmd]，进入C:/wxWidgets 2.8.0/build/msw 目录，分别输入如下命令行：
+清理：  mingw32-make -f makefile.gcc clean
+Release：mingw32-make -f makefile.gcc MONOLITHIC=0 SHARED=1 UNICODE=1 BUILD=release
+Debug：  mingw32-make -f makefile.gcc MONOLITHIC=0 SHARED=1 UNICODE=1 BUILD=debug
+分别 build release 和 debug 版本的库。编译时间比较长的哟^_^
+详细参数说明看文件 c:/wxWidgets-2.8.0/build/msw/config.gcc
+详细安装说明看文件 c:/wxWidgets-2.8.0/docs/msw/install.txt
+ 如果不想自己编译，可以到http://wxpack.sourceforge.net/Main/HomePage下载已经编译好的库(wxPack)的最新版本，根据需要安装。
