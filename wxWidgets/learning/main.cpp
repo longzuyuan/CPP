@@ -4,6 +4,7 @@
 #include "Button.h"
 #include "Communicate.h"
 #include "Menu.h"
+#include "Toolbar.h"
 
 IMPLEMENT_APP(myApp)
 
@@ -24,8 +25,11 @@ bool myApp::OnInit()
     //SimpleMenu *menu = new SimpleMenu("Menu Test");
     //menu->Show();
 
-    SubMenu *menu = new SubMenu("SubMenu Test");
-    menu->Show();
+    //SubMenu *menu = new SubMenu("SubMenu Test");
+    //menu->Show();
+
+    Toolbar *toolbar = new Toolbar("Toolbar Test");
+    toolbar->Show();
 
     return true;
 }

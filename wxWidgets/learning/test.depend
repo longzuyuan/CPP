@@ -1965,13 +1965,14 @@
 
 1395812751 source:d:\github\cpp\wxwidgets\learning\uitl.cpp
 
-1395911893 source:d:\github\cpp\wxwidgets\learning\main.cpp
+1395993875 source:d:\github\cpp\wxwidgets\learning\main.cpp
 	"main.h"
 	"Simple.h"
 	"Icon.h"
 	"Button.h"
 	"Communicate.h"
 	"Menu.h"
+	"Toolbar.h"
 
 1395823992 d:\github\cpp\wxwidgets\learning\main.h
 	<wx/wx.h>
@@ -1981,4 +1982,14 @@
 
 1395912018 source:d:\github\cpp\wxwidgets\learning\src\menu.cpp
 	"Menu.h"
+
+1395973943 source:d:\github\cpp\wxwidgets\learning\src\toolbar.cpp
+	"Toolbar.h"
+
+1395993824 d:\github\cpp\wxwidgets\learning\include\toolbar.h
+	<wx/wx.h>
+
+1384132716 c:\wxwidgets-3.0.0\lib\gcc_dll\mswu\wx\setup.h
+
+1384132716 c:\wxwidgets-3.0.0\lib\gcc_dll\mswud\wx\setup.h
 
