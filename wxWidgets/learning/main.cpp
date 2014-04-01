@@ -7,6 +7,11 @@
 #include "Toolbar.h"
 #include "Absolute.h"
 #include "Border.h"
+#include "Align.h"
+#include "GotoClass.h"
+#include "NewFrame.h"
+#include "GridSizer.h"
+#include "Flexgridsizer.h"
 
 IMPLEMENT_APP(myApp)
 
@@ -36,8 +41,23 @@ bool myApp::OnInit()
     //Absolute *absolute = new Absolute("Absolute layout");
     //absolute->Show();
 
-    Border *border = new Border("Border BoxSizer");
-    border->Show();
+    //Border *border = new Border("Border BoxSizer");
+    //border->Show();
+
+    //Align *align = new Align("BoxSizer align");
+    //align->Show();
+
+    //GotoClass *go = new GotoClass("Go to class");
+    //go->Show();
+
+    //NewFrame *nf = new NewFrame(NULL);
+    //nf->Show();
+
+    //GridSizer *gs = new GridSizer("Grid sizer");
+    //gs->Show();
+
+    FlexGridSizer *fgs = new FlexGridSizer("Flex Grid sizer");
+    fgs->Show();
 
     return true;
 }

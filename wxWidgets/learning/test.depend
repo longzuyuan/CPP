@@ -1965,7 +1965,7 @@
 
 1395812751 source:d:\github\cpp\wxwidgets\learning\uitl.cpp
 
-1396321410 source:d:\github\cpp\wxwidgets\learning\main.cpp
+1396328832 source:d:\github\cpp\wxwidgets\learning\main.cpp
 	"main.h"
 	"Simple.h"
 	"Icon.h"
@@ -1975,6 +1975,11 @@
 	"Toolbar.h"
 	"Absolute.h"
 	"Border.h"
+	"Align.h"
+	"GotoClass.h"
+	"NewFrame.h"
+	"GridSizer.h"
+	"Flexgridsizer.h"
 
 1395823992 d:\github\cpp\wxwidgets\learning\main.h
 	<wx/wx.h>
@@ -1995,12 +2000,50 @@
 
 1384132716 c:\wxwidgets-3.0.0\lib\gcc_dll\mswud\wx\setup.h
 
-1396320436 d:\github\cpp\wxwidgets\learning\include\absolute.h
+1396321833 d:\github\cpp\wxwidgets\learning\include\absolute.h
 	<wx/wx.h>
 
-1396321432 d:\github\cpp\wxwidgets\learning\include\border.h
+1396321833 d:\github\cpp\wxwidgets\learning\include\border.h
 	<wx/wx.h>
 
-1396320663 source:d:\github\cpp\wxwidgets\learning\src\absolute.cpp
+1396321833 source:d:\github\cpp\wxwidgets\learning\src\absolute.cpp
 	"Absolute.h"
+
+1396322245 d:\github\cpp\wxwidgets\learning\include\align.h
+	<wx/wx.h>
+
+1396322412 source:d:\github\cpp\wxwidgets\learning\src\align.cpp
+	"Align.h"
+
+1396321833 source:d:\github\cpp\wxwidgets\learning\src\border.cpp
+	"Border.h"
+
+1396322645 d:\github\cpp\wxwidgets\learning\include\gotoclass.h
+	<wx/wx.h>
+
+1396322944 source:d:\github\cpp\wxwidgets\learning\src\gotoclass.cpp
+	"GotoClass.h"
+
+1396328220 source:d:\github\cpp\wxwidgets\learning\newframe.cpp
+	"NewFrame.h"
+	<wx/intl.h>
+	<wx/string.h>
+
+1396327954 d:\github\cpp\wxwidgets\learning\newframe.h
+	<wx/sizer.h>
+	<wx/stattext.h>
+	<wx/textctrl.h>
+	<wx/checkbox.h>
+	<wx/panel.h>
+	<wx/button.h>
+	<wx/frame.h>
+
+1396328287 d:\github\cpp\wxwidgets\learning\include\gridsizer.h
+	<wx/wx.h>
+
+1396328798 source:d:\github\cpp\wxwidgets\learning\src\gridsizer.cpp
+	"Gridsizer.h"
+
+1396328776 d:\github\cpp\wxwidgets\learning\include\flexgridsizer.h
+	<wx/wx.h>
 
