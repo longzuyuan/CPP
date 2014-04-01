@@ -1965,7 +1965,7 @@
 
 1395812751 source:d:\github\cpp\wxwidgets\learning\uitl.cpp
 
-1395993875 source:d:\github\cpp\wxwidgets\learning\main.cpp
+1396321410 source:d:\github\cpp\wxwidgets\learning\main.cpp
 	"main.h"
 	"Simple.h"
 	"Icon.h"
@@ -1973,6 +1973,8 @@
 	"Communicate.h"
 	"Menu.h"
 	"Toolbar.h"
+	"Absolute.h"
+	"Border.h"
 
 1395823992 d:\github\cpp\wxwidgets\learning\main.h
 	<wx/wx.h>
@@ -1992,4 +1994,13 @@
 1384132716 c:\wxwidgets-3.0.0\lib\gcc_dll\mswu\wx\setup.h
 
 1384132716 c:\wxwidgets-3.0.0\lib\gcc_dll\mswud\wx\setup.h
+
+1396320436 d:\github\cpp\wxwidgets\learning\include\absolute.h
+	<wx/wx.h>
+
+1396321432 d:\github\cpp\wxwidgets\learning\include\border.h
+	<wx/wx.h>
+
+1396320663 source:d:\github\cpp\wxwidgets\learning\src\absolute.cpp
+	"Absolute.h"
 
