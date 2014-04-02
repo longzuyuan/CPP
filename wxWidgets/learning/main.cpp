@@ -12,6 +12,7 @@
 #include "NewFrame.h"
 #include "GridSizer.h"
 #include "Flexgridsizer.h"
+#include "Tetris.h"
 
 IMPLEMENT_APP(myApp)
 
@@ -56,8 +57,14 @@ bool myApp::OnInit()
     //GridSizer *gs = new GridSizer("Grid sizer");
     //gs->Show();
 
-    FlexGridSizer *fgs = new FlexGridSizer("Flex Grid sizer");
-    fgs->Show();
+    //FlexGridSizer *fgs = new FlexGridSizer("Flex Grid sizer");
+    //fgs->Show();
+
+
+    srand(time(NULL));
+    Tetris *tetris = new Tetris(wxT("Tetris"));
+    tetris->Centre();
+    tetris->Show(true);
 
     return true;
 }
