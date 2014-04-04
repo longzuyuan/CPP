@@ -1965,7 +1965,7 @@
 
 1395812751 source:d:\github\cpp\wxwidgets\learning\uitl.cpp
 
-1396328832 source:d:\github\cpp\wxwidgets\learning\main.cpp
+1396418765 source:d:\github\cpp\wxwidgets\learning\main.cpp
 	"main.h"
 	"Simple.h"
 	"Icon.h"
@@ -1980,6 +1980,7 @@
 	"NewFrame.h"
 	"GridSizer.h"
 	"Flexgridsizer.h"
+	"Tetris.h"
 
 1395823992 d:\github\cpp\wxwidgets\learning\main.h
 	<wx/wx.h>
@@ -2024,12 +2025,12 @@
 1396322944 source:d:\github\cpp\wxwidgets\learning\src\gotoclass.cpp
 	"GotoClass.h"
 
-1396328220 source:d:\github\cpp\wxwidgets\learning\newframe.cpp
+1396329177 source:d:\github\cpp\wxwidgets\learning\newframe.cpp
 	"NewFrame.h"
 	<wx/intl.h>
 	<wx/string.h>
 
-1396327954 d:\github\cpp\wxwidgets\learning\newframe.h
+1396329144 d:\github\cpp\wxwidgets\learning\newframe.h
 	<wx/sizer.h>
 	<wx/stattext.h>
 	<wx/textctrl.h>
@@ -2049,4 +2050,25 @@
 
 1396329031 source:d:\github\cpp\wxwidgets\learning\src\flexgridsizer.cpp
 	"Flexgridsizer.h"
+
+1396418765 d:\github\cpp\wxwidgets\learning\include\tetris.h
+	<wx/wx.h>
+
+1396418765 source:d:\github\cpp\wxwidgets\learning\src\board.cpp
+	"Board.h"
+
+1396418765 d:\github\cpp\wxwidgets\learning\include\board.h
+	"Shape.h"
+	<wx/wx.h>
+
+1396418765 d:\github\cpp\wxwidgets\learning\include\shape.h
+
+1396418765 source:d:\github\cpp\wxwidgets\learning\src\shape.cpp
+	<stdlib.h>
+	<algorithm>
+	"Shape.h"
+
+1396418765 source:d:\github\cpp\wxwidgets\learning\src\tetris.cpp
+	"Tetris.h"
+	"Board.h"
 

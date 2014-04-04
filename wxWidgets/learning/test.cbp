@@ -63,26 +63,47 @@
 		<Linker>
 			<Add option="-mthreads" />
 		</Linker>
+		<Unit filename="NewFrame.cpp" />
+		<Unit filename="NewFrame.h" />
 		<Unit filename="Simple.cpp" />
 		<Unit filename="Simple.h" />
+		<Unit filename="include/Absolute.h" />
+		<Unit filename="include/Align.h" />
+		<Unit filename="include/Board.h" />
+		<Unit filename="include/Border.h" />
 		<Unit filename="include/Button.h" />
 		<Unit filename="include/Communicate.h" />
+		<Unit filename="include/FlexGridSizer.h" />
+		<Unit filename="include/GotoClass.h" />
+		<Unit filename="include/GridSizer.h" />
 		<Unit filename="include/Icon.h" />
 		<Unit filename="include/Menu.h" />
 		<Unit filename="include/Panels.h" />
+		<Unit filename="include/Shape.h" />
+		<Unit filename="include/Tetris.h" />
 		<Unit filename="include/Toolbar.h" />
 		<Unit filename="main.cpp" />
 		<Unit filename="main.h" />
 		<Unit filename="resource.rc">
 			<Option compilerVar="WINDRES" />
 		</Unit>
+		<Unit filename="src/Absolute.cpp" />
+		<Unit filename="src/Align.cpp" />
+		<Unit filename="src/Board.cpp" />
+		<Unit filename="src/Border.cpp" />
 		<Unit filename="src/Button.cpp" />
 		<Unit filename="src/Communicate.cpp" />
+		<Unit filename="src/FlexGridSizer.cpp" />
+		<Unit filename="src/GotoClass.cpp" />
+		<Unit filename="src/GridSizer.cpp" />
 		<Unit filename="src/Icon.cpp" />
 		<Unit filename="src/Menu.cpp" />
 		<Unit filename="src/Panels.cpp" />
+		<Unit filename="src/Shape.cpp" />
+		<Unit filename="src/Tetris.cpp" />
 		<Unit filename="src/Toolbar.cpp" />
 		<Unit filename="uitl.cpp" />
+		<Unit filename="wxsmith/NewFrame.wxs" />
 		<Unit filename="wxsmith/Simple.wxs" />
 		<Extensions>
 			<code_completion />
@@ -93,6 +114,7 @@
 				<resources>
 					<wxDialog wxs="wxsmith/testdialog.wxs" src="testMain.cpp" hdr="testMain.h" fwddecl="0" i18n="1" name="testDialog" language="CPP" />
 					<wxFrame wxs="wxsmith/Simple.wxs" src="Simple.cpp" hdr="Simple.h" fwddecl="0" i18n="1" name="Simple" language="CPP" />
+					<wxFrame wxs="wxsmith/NewFrame.wxs" src="NewFrame.cpp" hdr="NewFrame.h" fwddecl="0" i18n="1" name="NewFrame" language="CPP" />
 				</resources>
 			</wxsmith>
 		</Extensions>
