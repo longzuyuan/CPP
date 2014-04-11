@@ -1965,7 +1965,7 @@
 
 1395812751 source:d:\github\cpp\wxwidgets\learning\uitl.cpp
 
-1396418765 source:d:\github\cpp\wxwidgets\learning\main.cpp
+1397200123 source:d:\github\cpp\wxwidgets\learning\main.cpp
 	"main.h"
 	"Simple.h"
 	"Icon.h"
@@ -1981,6 +1981,7 @@
 	"GridSizer.h"
 	"Flexgridsizer.h"
 	"Tetris.h"
+	"MyTetris.h"
 
 1395823992 d:\github\cpp\wxwidgets\learning\main.h
 	<wx/wx.h>
@@ -2054,7 +2055,7 @@
 1396418765 d:\github\cpp\wxwidgets\learning\include\tetris.h
 	<wx/wx.h>
 
-1396418765 source:d:\github\cpp\wxwidgets\learning\src\board.cpp
+1396421813 source:d:\github\cpp\wxwidgets\learning\src\board.cpp
 	"Board.h"
 
 1396418765 d:\github\cpp\wxwidgets\learning\include\board.h
@@ -2071,4 +2072,17 @@
 1396418765 source:d:\github\cpp\wxwidgets\learning\src\tetris.cpp
 	"Tetris.h"
 	"Board.h"
+
+1397200123 d:\github\cpp\wxwidgets\learning\include\mytetris.h
+	"MyBoard.h"
+
+1397207279 d:\github\cpp\wxwidgets\learning\include\myboard.h
+	<wx/wx.h>
+	<iostream>
+
+1397200063 source:d:\github\cpp\wxwidgets\learning\src\mytetris.cpp
+	"MyTetris.h"
+
+1397206720 source:d:\github\cpp\wxwidgets\learning\src\myboard.cpp
+	"MyBoard.h"
 
