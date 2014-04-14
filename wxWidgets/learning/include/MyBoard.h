@@ -3,6 +3,7 @@
 
 #include <wx/wx.h>
 #include <iostream>
+#include "MyShape.h"
 
 class MyBoard : public wxPanel
 {
@@ -15,6 +16,7 @@ class MyBoard : public wxPanel
         void OnPaint(wxPaintEvent & event);
         void OnResize(wxSizeEvent & event);
         void OnTimer(wxCommandEvent & event);
+        void OnKeyDown(wxKeyEvent & event);
 
         int SquareWidth() { return GetClientSize().GetWidth() / BoardWidth; }
         int SquareHeight() { return GetClientSize().GetHeight() / BoardHeight; }
@@ -22,7 +24,10 @@ class MyBoard : public wxPanel
         void DrawSquare(wxPaintDC &dc, int x, int y);
 
         int x,y;
+        MyShape curShape;
         wxTimer * timer;
+
+        int board[BoardWidth * BoardHeight];
 };
 
 #endif // MYBOARD_H

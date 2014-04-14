@@ -2076,13 +2076,19 @@
 1397200123 d:\github\cpp\wxwidgets\learning\include\mytetris.h
 	"MyBoard.h"
 
-1397207279 d:\github\cpp\wxwidgets\learning\include\myboard.h
+1397467448 d:\github\cpp\wxwidgets\learning\include\myboard.h
 	<wx/wx.h>
 	<iostream>
+	"MyShape.h"
 
 1397200063 source:d:\github\cpp\wxwidgets\learning\src\mytetris.cpp
 	"MyTetris.h"
 
-1397206720 source:d:\github\cpp\wxwidgets\learning\src\myboard.cpp
+1397467507 source:d:\github\cpp\wxwidgets\learning\src\myboard.cpp
 	"MyBoard.h"
+
+1397468023 source:d:\github\cpp\wxwidgets\learning\src\myshape.cpp
+	"MyShape.h"
+
+1397467047 d:\github\cpp\wxwidgets\learning\include\myshape.h
 
