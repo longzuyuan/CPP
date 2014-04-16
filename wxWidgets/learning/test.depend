@@ -1965,7 +1965,7 @@
 
 1395812751 source:d:\github\cpp\wxwidgets\learning\uitl.cpp
 
-1397200123 source:d:\github\cpp\wxwidgets\learning\main.cpp
+1397553666 source:d:\github\cpp\wxwidgets\learning\main.cpp
 	"main.h"
 	"Simple.h"
 	"Icon.h"
@@ -2076,19 +2076,21 @@
 1397200123 d:\github\cpp\wxwidgets\learning\include\mytetris.h
 	"MyBoard.h"
 
-1397467448 d:\github\cpp\wxwidgets\learning\include\myboard.h
+1397553655 d:\github\cpp\wxwidgets\learning\include\myboard.h
 	<wx/wx.h>
 	<iostream>
+	<cmath>
 	"MyShape.h"
 
-1397200063 source:d:\github\cpp\wxwidgets\learning\src\mytetris.cpp
+1397551402 source:d:\github\cpp\wxwidgets\learning\src\mytetris.cpp
 	"MyTetris.h"
 
-1397467507 source:d:\github\cpp\wxwidgets\learning\src\myboard.cpp
+1397553636 source:d:\github\cpp\wxwidgets\learning\src\myboard.cpp
 	"MyBoard.h"
 
-1397468023 source:d:\github\cpp\wxwidgets\learning\src\myshape.cpp
+1397553600 source:d:\github\cpp\wxwidgets\learning\src\myshape.cpp
 	"MyShape.h"
 
-1397467047 d:\github\cpp\wxwidgets\learning\include\myshape.h
+1397553777 d:\github\cpp\wxwidgets\learning\include\myshape.h
+	<cstdlib>
 
