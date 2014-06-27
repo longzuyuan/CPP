@@ -1,16 +1,12 @@
 #include "MyBoard.h"
 
 MyBoard::MyBoard(wxFrame * parent)
-    : wxPanel(parent, -1, wxDefaultPosition, wxDefaultSize, wxBORDER_NONE), x(4), y(0), score(0), curShape()
+    : wxPanel(parent, -1, wxDefaultPosition, wxDefaultSize, wxBORDER_NONE), x(4), y(0), score(0), curShape(), SPEED(300)
 {
     sb = parent->GetStatusBar();
     sb->SetStatusText(wxT("0"));
 
-    for(int i=0; i<BoardWidth; i++) {
-        for(int j=0; j<BoardHeight; j++) {
-            board[j*BoardWidth + i] = 0;
-        }
-    }
+    ClearBoard();
 
     timer = new wxTimer(this, 1);
 
@@ -19,7 +15,7 @@ MyBoard::MyBoard(wxFrame * parent)
     Connect(wxEVT_TIMER, wxCommandEventHandler(MyBoard::OnTimer));
     Connect(wxEVT_KEY_DOWN, wxKeyEventHandler(MyBoard::OnKeyDown));
 
-    timer->Start(300);
+    timer->Start(SPEED);
     status = 1;
 }
 
@@ -36,7 +32,7 @@ void MyBoard::OnPaint(wxPaintEvent & event)
     }
 
     for(int i=0; i<4; i++) {
-        DrawSquare(dc, x+curShape.coords[i][0], y+curShape.coords[i][1]);
+        DrawSquare(dc, x+curShape.x(i), y+curShape.y(i));
     }
 
 }
@@ -51,8 +47,8 @@ void MyBoard::OnTimer(wxCommandEvent & event)
     //判断有没有到底
     bool stop = false;
     for(int i=0; i<4; i++) {
-        if(board[(curShape.coords[i][1] + y + 1) * BoardWidth + x + curShape.coords[i][0]] == 1) stop = true;
-        if(y + curShape.coords[i][1] >= BoardHeight-1) stop = true;
+        if(board[(curShape.y(i) + y + 1) * BoardWidth + x + curShape.x(i)] == 1) stop = true;
+        if(y + curShape.y(i) >= BoardHeight-1) stop = true;
     }
 
     //往下移动，如果到底修改board
@@ -60,7 +56,7 @@ void MyBoard::OnTimer(wxCommandEvent & event)
         y++;
     } else {
         for(int i=0; i<4; i++) {
-            board[(curShape.coords[i][1] + y) * BoardWidth + x + curShape.coords[i][0]] = 1;
+            board[(curShape.y(i) + y) * BoardWidth + x + curShape.x(i)] = 1;
         }
 
         RemoveFullLine();
@@ -87,6 +83,7 @@ void MyBoard::RemoveFullLine()
                 for(int i=0; i<BoardWidth; i++)
                     ShapeAt(i, k) = ShapeAt(i, k-1);
             }
+            j++;
             score += 10;
             wxString str;
             str.Printf(wxT("%d"), score);
@@ -111,7 +108,23 @@ void MyBoard::OnKeyDown(wxKeyEvent & event)
 {
     int keyCode = event.GetKeyCode();
 
-    if(status == 0) return;
+    if(keyCode == WXK_SPACE)
+    {
+        if(status == 1) {
+            timer->Stop();
+            status = 2;
+        } else if(status == 2) {
+            timer->Start(SPEED);
+            status = 1;
+        } else {
+            x = 4, y = 0, score = 0, curShape.SetShape();
+            ClearBoard();
+            status = 1;
+            timer->Start(SPEED);
+        }
+    }
+
+    if(status != 1) return;
 
     switch(keyCode) {
         case WXK_LEFT: TryMove(x-1, y); break;
@@ -121,12 +134,22 @@ void MyBoard::OnKeyDown(wxKeyEvent & event)
     }
 }
 
+void MyBoard::ClearBoard()
+{
+    for(int i=0; i<BoardWidth; i++) {
+        for(int j=0; j<BoardHeight; j++) {
+            board[j*BoardWidth + i] = 0;
+        }
+    }
+}
+
 void MyBoard::TryMove(int tmpX, int tmpY)
 {
     for(int i=0; i<4; i++) {
-        if((curShape.coords[i][0] + tmpX) < 0 || (curShape.coords[i][0] + tmpX) >= BoardWidth) return;
-        if((curShape.coords[i][1] + tmpY) < 0 || (curShape.coords[i][1] + tmpY) >= BoardHeight) return;
-        if(board[(curShape.coords[i][1] + tmpY) * BoardWidth + tmpX + curShape.coords[i][0]] == 1) return;
+        //int x = curShape.x(i) + tmpX;
+        if((curShape.x(i) + tmpX) < 0 || (curShape.x(i) + tmpX) >= BoardWidth) return;
+        if((curShape.y(i) + tmpY) < 0 || (curShape.y(i) + tmpY) >= BoardHeight) return;
+        if(board[(curShape.y(i) + tmpY) * BoardWidth + tmpX + curShape.x(i)] == 1) return;
     }
 
     timer->Stop();

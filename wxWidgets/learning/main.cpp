@@ -62,10 +62,10 @@ bool myApp::OnInit()
     //fgs->Show();
 
 
-    srand(time(NULL));
-    Tetris *tetris = new Tetris(wxT("Tetris"));
-    tetris->Centre();
-    tetris->Show(true);
+    //srand(time(NULL));
+    //Tetris *tetris = new Tetris(wxT("Tetris"));
+    //tetris->Centre();
+    //tetris->Show(true);
 
     srand(time(NULL));
     MyTetris *tetris2 = new MyTetris(wxT("Tetris"));

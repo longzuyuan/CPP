@@ -27,6 +27,7 @@ class MyBoard : public wxPanel
         void TryMove(int i, int j);
         void DrawSquare(wxPaintDC &dc, int x, int y);
         void RemoveFullLine();
+        void ClearBoard();
 
         int x,y;
         MyShape curShape;
@@ -36,6 +37,7 @@ class MyBoard : public wxPanel
         int status; //1 on-going 2 pause 0 stop;
 
         int board[BoardWidth * BoardHeight];
+        const int SPEED;
 };
 
 #endif // MYBOARD_H

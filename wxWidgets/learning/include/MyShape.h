@@ -7,12 +7,14 @@ class MyShape
 {
     public:
         MyShape();
-        int coords[4][2];
+        int x(int i) { return coords[i][0]; };
+        int y(int i) { return coords[i][1]; };
 
         void RotateLeft();
         void SetShape();
 
     private:
+        int coords[4][2];
 
 };
 

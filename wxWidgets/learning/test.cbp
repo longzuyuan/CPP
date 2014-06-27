@@ -81,6 +81,7 @@
 		<Unit filename="include/Icon.h" />
 		<Unit filename="include/Menu.h" />
 		<Unit filename="include/MyBoard.h" />
+		<Unit filename="include/MyShape.h" />
 		<Unit filename="include/MyTetris.h" />
 		<Unit filename="include/Panels.h" />
 		<Unit filename="include/Shape.h" />
@@ -103,6 +104,7 @@
 		<Unit filename="src/Icon.cpp" />
 		<Unit filename="src/Menu.cpp" />
 		<Unit filename="src/MyBoard.cpp" />
+		<Unit filename="src/MyShape.cpp" />
 		<Unit filename="src/MyTetris.cpp" />
 		<Unit filename="src/Panels.cpp" />
 		<Unit filename="src/Shape.cpp" />
